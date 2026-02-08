@@ -50,24 +50,24 @@ class Task:
         print(self.task)
 list = Task()
 while True:
-    print("Was willst du machen | add | remove | list_done | list_not_done | mark | update | stop")
-    frage = input("")
-    if frage == "add":
+    print("Was willst du machen | add | remove | list_done | list_not_done | list_in_progres | mark | update | stop | save")
+    question = input("")
+    if question == "add":
         list.add()
-    elif frage == "remove":
+    elif question == "remove":
         list.remove()
-    elif frage == "list_done":
+    elif question == "list_done":
         list.list_done()
-    elif frage == "list_not_done":
+    elif question == "list_not_done":
         list.list_not_done()
-    elif frage == "list_in_progres":
+    elif question == "list_in_progres":
         list.list_in_progres()
-    elif frage == "mark":
+    elif question == "mark":
         list.mark()
-    elif frage == "update":
+    elif question == "update":
         list.update()
-    elif frage == "stop":
+    elif question == "stop":
         break
-    elif frage == "speichern":
+    elif question == "save":
         with open ("Application.json", "w") as datei:
             json.dump(list.task, datei)
