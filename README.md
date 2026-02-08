@@ -1,19 +1,24 @@
-# Python Account & Inventory Manager
+# Python Task Manager (To-Do List)
+A command-line based productivity tool built to manage tasks with different status states, demonstrating efficient use of Python dictionaries and JSON persistence.
 
-A robust Python-based management system demonstrating **Object-Oriented Programming (OOP)** and **Data Persistence** through JSON.
-
-## 🚀 Key Features
-- **Account Management:** Create user profiles with starting balance and unique filenames.
-- **Shopping Logic:** Buy items (Star, Shell, Block) with real-time balance and inventory slot validation.
-- **Selling Mechanic:** Sell items back to the system with a 10% transaction fee.
-- **Persistent Storage:** Full Save/Load functionality using `json` to keep player data across sessions.
-- **Inventory System:** Built-in limits (max 5 slots) to simulate game mechanics.
+## 🚀 Features
+* **Task Tracking:** Add and remove tasks with ease.
+* **Status Management:** Mark tasks as `not_done`, `progres`, or `done`.
+* **Filtered Lists:** Specifically view tasks based on their current status (In Progress, Done, or Not Done).
+* **Persistence:** Export your current task list to an `Application.json` file for future use.
 
 ## 🛠 Tech Stack
-- **Language:** Python3
-- **Storage Format:** JSON
+* **Language:** Python 3.x
+* **Data Structure:** Dictionary-based state management.
+* **Storage:** JSON (for data persistence)
 
 ## 🕹️ How to Use
-1. Run the script: `python account.py`
-2. Choose to **load** an existing profile or **create** a new one.
-3. Use commands like `kaufen` (buy), `verkaufen` (sell), `status`, or `ausgeben` (save & exit).
+1. **Run the program:** `python your_filename.py`
+2. **Commands:** Use `add`, `remove`, `mark`, or the `list_` commands to manage your tasks.
+3. **Save:** Type `save` to export your data to `Application.json`.
+
+## 🎯 Learning Progress
+This project allowed me to practice dictionary manipulation and iteration. Filtering data based on specific values (status states) is a fundamental skill in data processing, which I aim to refine during my time at SAP.
+
+---
+*Coding journey of a 15-year-old dev.*
